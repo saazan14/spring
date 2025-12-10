@@ -18,7 +18,11 @@ jobs:
   build:
     permissions:
       contents: read
+      dependency-graph: write
+      actions: read
       security-events: write
+      id-token: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
